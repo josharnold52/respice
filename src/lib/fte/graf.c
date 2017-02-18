@@ -37,6 +37,9 @@ static int plotno;
 static int curcolor = 1;        /* for assigning unique colors */
 static int curlst = 0;          /* for assigning line styles */
 
+static drawlegend();
+static gr_resize_internal();
+
 /* invariant:  currentgraph contains the current graph */
 
 /* These are what gets plotted as points when you specify point plots */

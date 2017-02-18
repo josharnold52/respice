@@ -1,0 +1,7 @@
+Re-enable return type warnings (see CC_OPT in conf/osx)
+
+Make build script more intelligent about where to build files (it built files one level above my source directory)
+ 
+
+
+

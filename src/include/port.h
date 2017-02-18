@@ -6,6 +6,11 @@ Copyright 1990 Regents of the University of California.  All rights reserved.
  *  Operating System
  */
 
+#ifdef __APPLE__
+#  include "os_osx.h"
+#  define CONFIGURED
+#endif
+
 #ifdef aix
 #  include "os_aix.h"
 #  define CONFIGURED

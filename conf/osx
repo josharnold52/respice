@@ -1,0 +1,10 @@
+# For use with gcc; use "build <system> gcc"
+
+CC		= gcc
+CC_OPT		= -O -Wno-return-type
+CC_OPT_SAFE	= -O
+ASM_HACK	= < /dev/null
+MAKE		= make
+LDFLAGS		= -lm
+X_DIR           = /usr/X11
+

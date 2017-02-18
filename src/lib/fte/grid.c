@@ -27,6 +27,9 @@ static void arcset();
 static double cliparc();
 static void adddeglabel(), addradlabel();
 
+static drawlingrid();
+static drawloggrid();
+
 typedef enum { x_axis, y_axis } Axis;
 
 /* note: scaleunits is static and never changed in this file

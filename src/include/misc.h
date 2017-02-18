@@ -86,7 +86,11 @@ extern char *malloc();
 extern char *realloc();
 extern char *getenv();
 extern int errno;
+#  ifdef SYS_ERRLIST_TYPE
+extern SYS_ERRLIST_TYPE sys_errlist[];
+#  else
 extern char *sys_errlist[];
+#  endif
 extern char *getenv();
 extern char *getwd();
 extern int rand();
@@ -110,7 +114,11 @@ extern void clearerr();
 #  endif /* HAS_CLEARERR */
 
 #  ifndef bzero
+#    ifdef BZERO_TYPE
+extern BZERO_TYPE bzero();
+#    else
 extern int bzero();
+#    endif
 #  endif
 #  ifndef bcopy
 extern void bcopy();
